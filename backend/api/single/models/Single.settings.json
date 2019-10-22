@@ -1,0 +1,30 @@
+{
+  "connection": "default",
+  "collectionName": "singles",
+  "info": {
+    "name": "single",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "comment": ""
+  },
+  "attributes": {
+    "slug": {
+      "unique": true,
+      "required": true,
+      "type": "string"
+    },
+    "name": {
+      "required": true,
+      "type": "string"
+    },
+    "bonus": {
+      "type": "string"
+    },
+    "content": {
+      "type": "text"
+    }
+  }
+}

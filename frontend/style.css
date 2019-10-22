@@ -1,0 +1,291 @@
+@font-face {
+	font-family: 'Greycliff CF';
+	src: url('/static/fonts/greycliff-cf-bold.eot');
+	src: url('/static/fonts/greycliff-cf-bold.eot?#iefix') format('embedded-opentype'),
+             url('/static/fonts/greycliff-cf-bold.woff2') format('woff2'),
+	     url('/static/fonts/greycliff-cf-bold.woff') format('woff'),
+	     url('/static/fonts/greycliff-cf-bold.ttf') format('truetype'),
+	     url('/static/fonts/greycliff-cf-bold.svg#youworkforthem') format('svg');
+	font-weight: 600;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Greycliff CF';
+	src: url('/static/fonts/greycliff-cf-medium.eot');
+	src: url('/static/fonts/greycliff-cf-medium.eot?#iefix') format('embedded-opentype'),
+             url('/static/fonts/greycliff-cf-medium.woff2') format('woff2'),
+	     url('/static/fonts/greycliff-cf-medium.woff') format('woff'),
+	     url('/static/fonts/greycliff-cf-medium.ttf') format('truetype'),
+	     url('/static/fonts/greycliff-cf-medium.svg#youworkforthem') format('svg');
+	font-weight: 500;
+	font-style: normal;
+}
+
+html {
+  box-sizing: border-box;
+  min-height: 100%;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+  background-color: #090909;
+  font-family: 'Greycliff CF', Helvetica, Arial, Sans-Serif;
+  height: 100%;
+}
+
+body.about {
+  background-image: url('/static/img/about.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.flex-center-children {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  z-index: 2;
+  padding: 30px 20px;
+}
+
+.logo-wrapper {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+}
+
+.logo-wrapper:hover,
+.logo-wrapper:focus {
+  text-decoration: none;
+}
+
+.logo {
+  width: 40px;
+  margin-right: 12px;
+}
+
+.logo-label {
+  text-decoration: none;
+  color: #FFF;
+  font-weight: 600;
+}
+
+.project {
+  text-decoration: none;
+  text-transform: uppercase;
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: white;
+  transition: all 0.3s ease-in-out;
+  font-size: 46px;
+}
+
+.project:hover {
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: #FF8A00;
+  text-shadow: 0 0 25px rgba(255, 138, 0, 0.4);
+}
+
+.projects-list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  transform: translate3d(0, 0, 0);
+  font-weight: 600;
+}
+
+.projects-wrapper {
+  position: absolute;
+  max-height: 800px;
+  width: 100%;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+  text-align: center;
+  overflow: scroll;
+  padding: 0 20px;
+}
+
+
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 2;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding: 10px;
+}
+
+.social {
+  display: none;
+  list-style-type: none;
+  padding: 0;
+}
+
+
+.footer-work-status {
+  display: flex;
+  align-items: center;
+}
+
+
+.footer-work-status-label {
+  display: none;
+  font-size: 12px;
+  font-weight: 600;
+  text-align: right;
+  text-transform: uppercase;
+  color: #3D3D3D;
+}
+
+.header-link, 
+.social-link {
+  color: #FFF;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.social-item + .social-item {
+  margin-left: 16px;
+}
+
+.header-link:focus, 
+.header-link:hover, 
+.social-link:focus,
+.social-link:hover {
+  color: #FFF;
+}
+
+.header-link-about.is-active {
+  opacity: 0.2;
+}
+
+
+/* 
+.projects-wrapper:before,
+.projects-wrapper:after {
+  content: "";
+  position: absolute;
+  height: 25%;
+  width: 100%;
+  z-index: 1;
+}
+
+.projects-wrapper:before {
+  top: 0;
+  left: 0;
+  background-image: linear-gradient(to bottom, rgba(9,9,9,1) 0%,rgba(9,9,9,0.73) 46%,rgba(9,9,9,0.00) 100%);
+}
+
+.projects-wrapper:after {
+  bottom: 0;
+  left: 0;
+  background-image: linear-gradient(to bottom, rgba(9,9,9,0.00) 0%,rgba(9,9,9,0.73) 57%,rgba(9,9,9,1) 100%);
+} */
+
+
+.about-container {
+  min-height: 200px;
+  max-width: 1040px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.about-content {
+  color: #FFF;
+  font-weight: 500;
+}
+
+.about-content p {
+  font-size: 14px;
+  line-height: 21px;
+}
+
+@media only screen and (min-width: 600px) {
+  .about-content p {
+    font-size: 28px;
+    line-height: 34px;
+  }
+}
+
+
+.about-bonus {
+  margin-top: 100px;
+  font-size: 14px;
+  color: #5C5C5C;
+}
+
+@media only screen and (min-width: 600px) {
+  .about-bonus {
+    font-size: 16px;
+  }
+}
+
+
+.about-bonus-items {
+  font-size: 12px;
+  color: #FFF;
+}
+
+@media only screen and (min-width: 600px) {
+  .about-bonus-items {
+    font-size: 18px;
+  }
+}
+
+
+.about-footer {
+  border-top: 1px solid rgba(241, 241, 241, 0.1);
+  margin-top: 32px;
+  margin-bottom: 32px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+
+.about-footer-credits {
+  display: flex;
+  padding-top: 16px;
+}
+
+.about-footer-label {
+  font-size: 16px;
+  margin-bottom: 6px;
+  color: #5C5C5C;
+}
+
+.about-footer-item {
+  font-size: 16px;
+  color: #FFF;
+}
+
+.about-resume-link {
+  display: flex;
+  align-items: center;
+  color: #FFF;
+  text-decoration: none;
+  border-top: 1px solid rgba(241, 241, 241, 1);
+  padding-top: 40px;
+}
+
+.about-resume-link:hover, 
+.about-resume-link:focus {
+  text-decoration: none;
+}
+
+.about-resume-link svg {
+  margin-left: 8px;
+}
